@@ -1,0 +1,46 @@
+version: '3.9'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: horizon_backend
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      - db
+      - redis
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: horizon_frontend
+    command: yarn dev
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=development
+
+  db:
+    image: postgres:15
+    container_name: horizon_db
+    environment:
+      POSTGRES_DB: horizon
+      POSTGRES_USER: horizon_user
+      POSTGRES_PASSWORD: horizon_pass
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7
+    container_name: horizon_redis
+
+volumes:
+  postgres_data:
