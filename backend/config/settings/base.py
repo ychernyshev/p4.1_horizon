@@ -24,10 +24,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
@@ -53,10 +49,6 @@ DJOSER = {
         "current_user": "djoser.serializers.UserSerializer",
     },
 }
-
-# CORS_ALLOWED_ORIGINS = os.getenv("CORS_ORIGINS", "").split(",")
-CORS_ALLOW_ALL_ORIGINS = DEBUG
-
 
 # Application definition
 

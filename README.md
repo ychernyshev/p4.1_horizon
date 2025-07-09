@@ -46,8 +46,9 @@
 
 - 📘 [Horizon Master Doc](docs/horizon.md) — головний технічний документ
 - 🛠️ [API-документація (Swagger)](/api/schema/swagger-ui/) *(локально після запуску)*
-- ⚙️ [Налаштування середовища](docs/settings.md)
+- 🧭 [Архітектура системи](docs/architecture.md)
 - 📦 [requirements.txt](backend/requirements.txt) / [dev-requirements.txt](dev-requirements.txt)
+- ⚙️ [Налаштування середовища](docs/settings.md)
 - 🐳 [docker-compose.yml](docker-compose.yml) — конфігурація сервісів
 - 🧾 [.env.example](.env.example) — шаблон змінних середовища
 - 🧰 [Makefile](Makefile) — команди для запуску та обслуговування
@@ -56,13 +57,14 @@
 
 ## ⚙️ Технологічний стек
 
-| Категорія     | Технології |
-|---------------|------------|
-| Backend       | Python 3.11+, Django 5.2 LTS, DRF, Redis, PostgreSQL |
-| Frontend      | Vue 3, Vite, Pinia, Tailwind CSS |
-| DevOps        | Docker, docker-compose, Makefile |
-| Інше          | ESLint, Prettier, .env, Swagger (drf-spectacular) |
-| (опціонально) | Celery, Arduino, ролі/доступи, async-обробка |
+| Категорія     | Технології                                              |
+|---------------|---------------------------------------------------------|
+| Backend       | Python 3.11+, Django 5.2 LTS, DRF, Redis, PostgreSQL 16 |
+| Frontend      | Vue 3, Vite, Pinia, Bootstrap                           |
+| DevOps        | Docker, docker-compose, Makefile, GunicornNginx         |
+| Інше          | ESLint, Prettier, .env, Swagger (drf-spectacular)       |
+| (опціонально) | Celery, Arduino, ролі/доступи, async-обробка            |
+Детальніше про стек: [технологічний стек](docs/stack.md)
 
 ---
 
@@ -74,6 +76,8 @@ make dev          # запустити у development
 make migrate      # застосувати міграції
 make createsuper  # створити суперкористувача
 ```
+
+Усі команди у [Makefile](Makefile)
 
 ---
 
