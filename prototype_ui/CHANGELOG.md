@@ -31,6 +31,37 @@
 
 ---
 
+## [v0.1.1] – 2025-07-13
+
+### 📁 Structure
+- Added folder `mail` with templates:
+  - `add_mail.html`
+  - `update_mail.html`
+- Added folder `reports` with template:
+  - `upload_errors.html`
+
+### ✨ Features
+- Max section height added and scrolling enabled.
+- Dashboard page design has been completed.
+- “Add mail” page updated: saving form for mail item added.
+
+### 🎨 Styles
+- Scrolling styles added in `scrolling_stiles.css`.
+- Toast styles added in `toasts.css`.
+- Styles for Navigation Panel cards added in `navigation-cards.css`.
+
+### 🧭 Navigation Panel
+- Basic structure of the Navigation Panel has been added.
+- Example cards have been implemented for interface testing.
+- Search panel and filter buttons are now available.
+- Search form has been added.
+- Active-style card now has its own styling and animation.
+
+---
+
+
+---
+
 
 ## [0.2.0] — 2024-07-20
 
