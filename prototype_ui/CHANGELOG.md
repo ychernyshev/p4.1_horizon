@@ -4,7 +4,7 @@
 
 ---
 
-## [0.1.0] — 2024-07-18
+## [0.1.0] — 2024-07-10
 
 ### 🚀 Added
 - 📁 Створено гілку `feature/ui-prototype` для шаблону інтерфейсу
@@ -59,9 +59,22 @@
 
 ---
 
+## [v0.1.2] – 2025-07-14
+
+### 🔧 Updates
+- Updated styles for Navigation Panel cards in "active" state.
+- Improved animation for active card behavior.
+- Ensured design consistency of the “Add mail” form.
+- Renamed template `add_mail.html` to `add_entry.html`.
+- Replaced diamond icon with P4 logo in the Documentation component (Navigation Bar).
+
+### 🚀 New Components
+- Added Upload Cheatsheet modal.
+- Added Upload Images modal.
 
 ---
 
+---
 
 ## [0.2.0] — 2024-07-20
 
