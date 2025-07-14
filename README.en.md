@@ -12,7 +12,7 @@
 
 ---
 
-# 🚀 P4.1 Horizon — Frontend Prototype + Modular Architecture
+# 🚀 Postman 4:Horizon (Up.1) — Frontend Prototype + Modular Architecture
 
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Python](https://img.shields.io/badge/python-3.13-blue.svg)
@@ -25,7 +25,7 @@
 
 ---
 
-**Postman 4.1 Horizon** is a production-oriented platform for building scalable web systems using **Django REST Framework**, **Docker**, **Redis**, **Nginx**, **Vue 3**, and a clean, adaptive UI.
+**Postman 4:Horizon** is a production-oriented platform for building scalable web systems using **Django REST Framework**, **Docker**, **Redis**, **Nginx**, **Vue 3**, and a clean, adaptive UI.
 
 This personal project was developed to explore the REST API ecosystem and optimize routine operational workflows in my current work environment.
 
@@ -53,7 +53,7 @@ It simulates a smart locker system built with **Django**, **DRF**, **Redis**, **
 
 ---
 
-## 🚀 What’s New in P4.1 Horizon
+## 🚀 What’s New in Postman 4:Horizon
 
 | Area             | Feature / Change                      | Comment |
 |------------------|----------------------------------------|---------|
@@ -85,7 +85,7 @@ Full stack description: [docs/stack.en.md](docs/stack.en.md)
 
 ## 🎨 UI Prototype & Preview
 
-This template is part of the P4.1 Horizon interface design — based on clean architecture with DRF, Docker, and Vue.  
+This template is part of the Postman 4:Horizon interface design — based on clean architecture with DRF, Docker, and Vue.  
 It was built using Soft UI Dashboard (Bootstrap 5) to quickly visualize the tri-panel layout prior to full Vue componentization.  
 It acts as the visual blueprint for implementation using Composition API and Pinia.
 
@@ -132,7 +132,7 @@ See all commands in [Makefile](Makefile)
 
 ## 💬 Author’s Reflection
 
-P4.1 Horizon is the next step in evolving a scalable backend-driven system built on clean architecture, DRF, Docker, and Vue. I created this project to consolidate knowledge, explore new technologies, and dive into a principled approach to real-world software development. I’ve aimed to build a structure that is scalable, modular, and adaptable for future integration. If this project proves useful to others or inspires new ideas — that is already a win.
+Postman 4:Horizon is the next step in evolving a scalable backend-driven system built on clean architecture, DRF, Docker, and Vue. I created this project to consolidate knowledge, explore new technologies, and dive into a principled approach to real-world software development. I’ve aimed to build a structure that is scalable, modular, and adaptable for future integration. If this project proves useful to others or inspires new ideas — that is already a win.
 
 ---
 
