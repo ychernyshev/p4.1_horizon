@@ -2,7 +2,7 @@ import {Dispatcher} from "../composables/useDispatcher.js";
 
 export function init(app) {
     app.routing.add("dashboard", () => {
-        app.root.innerHTML = "<h1>Dashboard</h1>";
+        app.panelManager.mountPanels();
     });
 
     app.routing.add("add_entry", () => {

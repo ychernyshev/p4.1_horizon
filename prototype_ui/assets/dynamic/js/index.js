@@ -3,7 +3,7 @@ import { Routing } from "./composables/useRouting.js";
 import { init } from "./route";
 
 //  Interface Layout
-import { layout } from "./components/layout/MainLayout.js";
+// import { layout } from "./components/layout/MainLayout.js";
 
 // Theme control
 import { PanelManager } from "./components/theme/PanelManager.js";
@@ -13,12 +13,12 @@ class MainController {
         this.root = document.getElementById(rootId);
         this.localStorage = new LocalStorage();
         this.routing = new Routing();
-        this.layout = layout;
+        // this.layout = layout;
         this.panelManager = new PanelManager();
     }
 
     renderLayout() {
-        this.root.innerHTML = this.layout.render(); // HTML як рядок
+        // this.root.innerHTML = this.layout.render();
         this.panelManager.mountPanels();
     }
 

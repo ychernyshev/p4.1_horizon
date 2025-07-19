@@ -1,0 +1,1 @@
+import { PanelManager } from '../components/theme/PanelManager';
