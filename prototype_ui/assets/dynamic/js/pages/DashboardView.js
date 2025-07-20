@@ -1,1 +1,1 @@
-import { PanelManager } from '../components/theme/PanelManager';
+import { PanelManager } from '../components/tce/PanelManager';

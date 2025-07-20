@@ -1,12 +1,12 @@
 import { LocalStorage } from "./composables/useLocalStorage.js";
 import { Routing } from "./composables/useRouting.js";
-import { init } from "./route";
+import { init } from "./router";
 
 //  Interface Layout
 // import { layout } from "./components/layout/MainLayout.js";
 
 // Theme control
-import { PanelManager } from "./components/theme/PanelManager.js";
+import { PanelManager } from "./components/tce/PanelManager.js";
 
 class MainController {
     constructor(rootId) {
@@ -19,7 +19,7 @@ class MainController {
 
     renderLayout() {
         // this.root.innerHTML = this.layout.render();
-        this.panelManager.mountPanels();
+        this.panelManager.mountScene();
     }
 
     navigateTo(view) {

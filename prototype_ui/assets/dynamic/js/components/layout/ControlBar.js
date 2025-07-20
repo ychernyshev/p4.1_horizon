@@ -1,6 +1,23 @@
 export const ControlBar = {
-    mount(params) {
+    mount(params = {}) {
         const container = document.getElementById("sidenav-main");
+
+        if (!container) {
+            console.warn("[TopBar] Контейнер #sidenav-main не знайдено — компонент не змонтовано.");
+            return;
+        }
+
+        // if(!container) {
+        //     const root = document.getElementById("app");
+        //
+        //     root.insertAdjacentHTML("afterbegin", `
+        //         <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3"
+        //           id="sidenav-main"></aside>
+        //     `);
+        //
+        //     container = document.getElementById("sidenav-main");
+        // }
+
         container.innerHTML = `
             <div class="sidenav-header">
               <i

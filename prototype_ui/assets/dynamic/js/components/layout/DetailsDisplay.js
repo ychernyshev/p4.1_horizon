@@ -1,7 +1,13 @@
 export const DetailsDisplay = {
-  mount(params) {
-    const container = document.getElementById("details-display");
-    container.innerHTML = `
+    mount(params = {}) {
+        const container = document.getElementById("details-display");
+
+        if (!container) {
+            console.warn("[TopBar] Контейнер #section-navigator не знайдено — компонент не змонтовано.");
+            return;
+        }
+
+        container.innerHTML = `
       <div class="row">
             <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
               <div class="card">
@@ -687,5 +693,5 @@ export const DetailsDisplay = {
           <!--                </div>-->
           <!--            </footer>-->
     `;
-  }
+    }
 };

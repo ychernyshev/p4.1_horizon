@@ -158,6 +158,19 @@
 
 ---
 
+## [0.1.5] – 2025-07-20
+
+### 🧠 Реалізовано Horizon Scene Engine (PanelManager)
+- Додано `PanelManager.js`: конструктор сторінок на основі маршруту
+- Метод `mountScene(sceneName)` вставляє базову структуру та монтує компоненти
+
+### 📦 Уніфіковано компонування через `LayoutRegistryScheme.js`
+- Зберігає:
+  - `structure` — HTML-шаблон контейнерів
+  - `layout` — порядок компонентів
+  - `config` — параметри до `mount()`
+
+### 🔄 Всі сторінки (dashboard, sign_in, add_entry і т.д.) тепер рендеряться через LayoutRegistry + PanelManager
 
 
 ---
