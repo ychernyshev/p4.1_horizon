@@ -19,7 +19,7 @@ export class Routing {
         if(route) {
             route();
         } else {
-            this.routes["404"]?.();
+            this.routes["page_404"]?.();
         }
     }
 

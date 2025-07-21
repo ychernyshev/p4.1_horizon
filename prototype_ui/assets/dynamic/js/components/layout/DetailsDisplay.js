@@ -3,7 +3,7 @@ export const DetailsDisplay = {
         const container = document.getElementById("details-display");
 
         if (!container) {
-            console.warn("[TopBar] Контейнер #section-navigator не знайдено — компонент не змонтовано.");
+            console.warn("[DetailsDisplay] Контейнер #details-display не знайдено — компонент не змонтовано.");
             return;
         }
 

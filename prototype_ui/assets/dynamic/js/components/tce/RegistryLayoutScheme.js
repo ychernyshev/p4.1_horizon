@@ -51,4 +51,9 @@ export const LayoutRegistry = {
             SignInForm: {redirect: "dashboard"}
         }
     },
+    page_404: {
+        primary_structure: {},
+        layout: ["Page404"],
+        config: {},
+    }
 }
