@@ -136,9 +136,13 @@ P4.1 Horizon is the next step in evolving a scalable backend-driven system built
 
 ---
 
-## 📄 License
+## ⚖️ License & Attributions
 
 This project is licensed under the [MIT License](LICENSE).
+
+### Third-Party Credits
+* Parts of this repository — specifically the folder `prototype_ui/` — are based on the **Soft UI Dashboard template** by [Creative Tim](https://www.creative-tim.com/product/soft-ui-dashboard), which is also distributed under the MIT License.
+* Please refer to `prototype_ui/LICENSE.md` for full terms of their original license.
 
 ---
 
